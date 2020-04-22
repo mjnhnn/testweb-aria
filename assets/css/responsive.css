@@ -1,0 +1,228 @@
+@media(min-width:1074px) {
+    .header-fixed__content {
+        -webkit-line-clamp: 1;
+    }
+}
+
+@media (max-width:1073px) {
+    .header-mobile {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 23;
+        background-color: #fff;
+    }
+    .header-pos-fixed {
+        margin-top: 80px;
+        position: unset;
+    }
+    .header-fixed__icon {
+        padding: 0 10px;
+    }
+    /* menu mobile */
+    .header-bot {
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin-top: 0;
+        width: 250px;
+        background-color: #21252a;
+        transform: translateX(120%);
+        z-index: 23;
+    }
+    .header-bot__wrapper {
+        overflow-y: scroll;
+    }
+    .header-bot__logo {
+        display: none;
+    }
+    .header-bot__btn {
+        flex-direction: column;
+        padding: 0;
+    }
+    .header-bot__btn a {
+        line-height: 2rem;
+        padding: 10px;
+    }
+    .btn-login {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
+    .btn-signin {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
+    .header-bot__menu {
+        padding: 0;
+        justify-content: center;
+    }
+    .header-bot__menu-menu {
+        flex-direction: column;
+        display: block;
+        width: 100%;
+    }
+    .header-bot__menu-list {
+        margin: 0;
+        border-bottom: 1px solid #647080;
+    }
+    .header-bot__menu-link {
+        margin: 0;
+        padding: 10px;
+        color: #647080;
+        line-height: 2rem;
+    }
+    .header-bot__menu-list:hover::before {
+        display: none;
+    }
+    .solutions__child {
+        background-color: #fff;
+        z-index: 2;
+    }
+    .solutions__child__link {
+        padding: 0;
+        padding: 10px;
+    }
+    .solutions__child__item {
+        overflow: hidden;
+    }
+    .header__mobile__btn__close-open i:hover {
+        background-color: darkgreen;
+    }
+    .header-bot {
+        opacity: 0;
+    }
+    .menumobile-btn-close {
+        display: block;
+    }
+}
+
+@media (max-width:1023px) {}
+
+@media (max-width:481px) {
+    .header-mobile__logo img {
+        width: 75px;
+        height: 37px;
+    }
+    .header-mobile__menu-close i {
+        top: 13px;
+    }
+    .header-fixed__icon {
+        padding: 0 10px;
+    }
+    .header-pos-fixed {
+        margin-top: 55px;
+    }
+}
+
+
+/* responsive slider  */
+
+@media (max-width:769px) {
+    .slider-banner__list {
+        padding: 80px;
+    }
+    .slider-banner__list h1 {
+        font-size: 4.6rem;
+    }
+}
+
+@media (max-width:415px) {
+    .slider-banner__list {
+        padding: 18px;
+        align-items: center;
+        text-align: center;
+    }
+    .slider-banner__list h1 {
+        font-size: 3.6rem;
+    }
+    .slider-banner__list p {
+        font-size: 2rem;
+    }
+}
+
+
+/* responsive slider  */
+
+
+/* Responsive counters */
+
+@media (max-width:481px) {
+    .counters__list {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .counters__img-wrap {
+        min-width: 65px;
+    }
+}
+
+
+/* Responsive counters */
+
+
+/* Responsive tabpanel */
+
+@media(max-width:1199px) {
+    .tabcontent {
+        padding: 20px 0 40px;
+    }
+    .tabpanel-link__btn::before {
+        display: none;
+    }
+    .tabpanel-link__btn--active::after {
+        display: none;
+    }
+    .tabpanel-link__btn:hover::before {
+        display: none;
+    }
+    .tabpanel-link__btn--active>.tabpanel-link__name>span {
+        color: #23a3e6;
+    }
+}
+
+@media(max-width:1181px) {
+    .tabpanel-link-btn__wrap {
+        justify-content: flex-start;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .tabcontent__wrap>p {
+        max-width: 100%;
+    }
+    .tabcontent__wrap>h1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width:639px) {
+    .tabcontent__btn {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .tabcontent__btn a:first-child {
+        margin-bottom: 30px;
+    }
+    .tabcontent__list {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .tabpanel-link__name {
+        max-width: unset;
+    }
+}

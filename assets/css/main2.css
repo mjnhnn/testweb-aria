@@ -1,0 +1,14 @@
+.header {
+    background-image: url(../img/banner-header-top5.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+.header-fixed {
+    display: flex;
+    justify-content: center;
+}
+
+.header-fixed__content {
+    font-size: 1.8rem;
+}
