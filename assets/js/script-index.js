@@ -42,3 +42,22 @@ $('.slider-banner').slick({
 // counters js
 
 $('.counters__number').counterUp({ delay: 10, time: 5000 });
+
+// $(document).on('click', '.bidding-menu-link', function() {
+//     $(this).addClass('bidding-menu-link--active').siblings().removeClass('bidding-menu-link--active')
+// })
+
+function openbinding(evt, biddingname) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("bidding-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("bidding-menu-link");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" bidding-menu-link--active", "");
+    }
+    document.getElementById(biddingname).style.display = "block";
+    evt.currentTarget.className += " bidding-menu-link--active";
+}
+document.getElementById("defaultOpen-binding").click();

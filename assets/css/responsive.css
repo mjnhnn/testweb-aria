@@ -107,8 +107,6 @@
     }
 }
 
-@media (max-width:1023px) {}
-
 @media (max-width:481px) {
     .header-mobile__logo img {
         width: 75px;
@@ -213,7 +211,7 @@
         flex-direction: column;
         margin-bottom: 20px;
     }
-    .tabcontent__btn a:first-child {
+    .tabcontent__btn-wrap:first-child {
         margin-bottom: 30px;
     }
     .tabcontent__list {
@@ -226,3 +224,119 @@
         max-width: unset;
     }
 }
+
+
+/* responsie binding */
+
+@media (max-width:1112px) {
+    .bidding-content {
+        margin-left: 0;
+        padding: 30px 15px;
+    }
+    .bidding-content-btn {
+        padding: 0;
+    }
+    .bidding-content-title,
+    .bidding-content-descreption h2,
+    .bidding-content-btn,
+    .bidding-content-descreption p {
+        text-align: center;
+    }
+    .bidding-content-btn {
+        padding-top: 30px;
+    }
+    .bidding-content-title h4 {
+        margin-top: 40px;
+    }
+    .bidding-menu-item__list,
+    .bidding-menu-item__list small {
+        max-width: 180px;
+    }
+    .bidding-menu-wrap-close {
+        display: block;
+    }
+    .bidding-menu-wrap {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: all linear 0.3s;
+        opacity: 0;
+        width: 30%;
+    }
+    #menumobile-binding:checked~.bidding-menu-wrap {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@media (max-width:916px) {
+    .bidding-menu-item__list,
+    .bidding-menu-item__list small {
+        max-width: 168px;
+    }
+    .bidding-menu-link {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:796px) {
+    .bidding-menu-item__list,
+    .bidding-menu-item__list small {
+        max-width: 160px;
+    }
+    .bidding-menu-link {
+        padding: 0 10px;
+    }
+    .bidding-menu-wrap {
+        width: 35%;
+    }
+}
+
+@media (max-width:693px) {
+    .bidding-menu-item__list,
+    .bidding-menu-item__list small {
+        max-width: 140px;
+    }
+    .bidding-menu-wrap {
+        width: 45%;
+    }
+}
+
+@media (max-width:505px) {
+    .bidding-menu-item__list,
+    .bidding-menu-item__list small {
+        max-width: 140px;
+    }
+    .bidding-menu-link {
+        padding: 0 10px;
+    }
+    .bidding-menu-wrap {
+        width: 55%;
+    }
+}
+
+@media (max-width:405px) {
+    .bidding-menu-item__list,
+    .bidding-menu-item__list small {
+        max-width: 100px;
+    }
+    .bidding-menu-link {
+        padding: 0 10px;
+    }
+    .bidding-menu-wrap {
+        width: 55%;
+    }
+}
+
+@media (max-width:325px) {
+    .bidding-menu-item__list,
+    .bidding-menu-item__list small {
+        max-width: 150px;
+    }
+}
+
+
+/* responsie binding */

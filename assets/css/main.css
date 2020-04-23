@@ -609,25 +609,29 @@
     margin-bottom: 45px;
 }
 
-.tabcontent__btn a {
+.tabcontent__btn-wrap {
     margin: 0 10px;
-    text-decoration: none;
-    color: #fff;
     background-color: #161616;
     border: 2px solid #fff;
-    padding: 8px 43px;
     border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all linear 0.2s;
+}
+
+.tabcontent__btn a {
+    text-decoration: none;
+    color: #fff;
     font-size: 1.6rem;
     text-transform: uppercase;
     line-height: 2.15rem;
     font-weight: 500;
     position: relative;
-    overflow: hidden;
-    transition: all linear 0.2s;
-    transform-origin: bottom;
+    display: block;
+    padding: 8px 43px;
 }
 
-.tabcontent__btn a::before {
+.tabcontent__btn-wrap::before {
     position: absolute;
     bottom: 0;
     top: 0;
@@ -636,11 +640,15 @@
     content: "";
     background-color: #fff;
     transform: translateY(100%);
-    transition: all linear 0.3s;
+    transition: all linear 0.2s;
 }
 
-.tabcontent__btn a:hover::before {
+.tabcontent__btn-wrap:hover::before {
     transform: translateY(0);
+}
+
+.tabcontent__btn-wrap:hover a {
+    color: #161616;
 }
 
 
@@ -823,6 +831,199 @@
 
 
 /* tabpanel */
+
+
+/* section bidding */
+
+.bidding-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bidding-content {
+    padding: var(--binding-spacing) 15px;
+    margin-left: 48px;
+    -webkit-animation: fadeEffect 1.2s;
+    animation: fadeEffect 1.2s;
+    display: none;
+}
+
+.bidding-menu-wrap {
+    padding: var(--binding-spacing) 0;
+    background-color: #25292e;
+    position: relative;
+}
+
+.bidding-menu-wrap-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    font-size: 2.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.bidding-content-title h4 {
+    font-size: 2.4rem;
+    color: #000;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.bidding-content-title h3 {
+    font-size: 2.2rem;
+    color: #137ac7;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.bidding-content-title img {
+    max-width: 100%;
+}
+
+.bidding-content-descreption h2 {
+    font-size: 3.2rem;
+    color: #383838;
+    font-weight: 400;
+    margin: 20px 0 10px 0;
+    line-height: 3.2rem;
+}
+
+.bidding-content-descreption p {
+    max-width: 95%;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.bidding-content-btn {
+    padding: 90px 0;
+}
+
+.bidding-content-btn-wrap {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.bidding-content-btn-wrap a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 20px 31px;
+    border: 2px solid #161616;
+    line-height: 14px;
+    color: #161616;
+    position: relative;
+    display: block;
+}
+
+.bidding-content-btn-wrap a:hover {
+    color: #fff;
+}
+
+.bidding-content-btn__growth {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #161616;
+    transition: all linear 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bidding-content-btn-wrap:hover .bidding-content-btn__growth {
+    width: 100%;
+}
+
+
+/* menu */
+
+.bidding-menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bidding-menu-link {
+    padding: 0 30px;
+    margin-bottom: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bidding-menu-link--active::before {
+    content: "";
+    position: absolute;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent #25292e transparent transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -35px;
+}
+
+.bidding-menu-item {
+    text-decoration: none;
+}
+
+.bidding-menu-item__list {
+    font-size: 1.8rem;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 0 5px 15px;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.bidding-menu-item__list:first-child {
+    padding-left: 0;
+    min-width: 60px;
+    text-align: center;
+}
+
+.bidding-menu-item__list small {
+    color: #1a7dd9;
+    font-size: 1.4rem;
+    display: block;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* menu mobile binding */
+
+.bidding-wrap-menu-moblie {
+    color: #fff;
+    background-color: #000;
+    padding: 6px 12px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.bidding-wrap-menu-moblie i {
+    vertical-align: center;
+    margin-right: 10px;
+}
+
+.bidding-menu-wrap-close {
+    display: none;
+}
+
+
+/* section bidding */
 
 
 /* Main */
