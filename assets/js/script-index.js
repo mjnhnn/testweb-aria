@@ -13,7 +13,24 @@ $('.slider-banner').slick({
     autoplaySpeed: 4000,
     cssEase: 'linear',
 });
-
+$('.media-wrap').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: true,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    cssEase: 'linear',
+});
+$('.Portfolio__content').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: true,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    cssEase: 'linear',
+});
 // counters js
 // $(document).ready(function() {
 

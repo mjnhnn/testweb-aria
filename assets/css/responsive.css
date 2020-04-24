@@ -272,7 +272,7 @@
     }
 }
 
-@media (max-width:916px) {
+@media (max-width:1243px) {
     .bidding-menu-item__list,
     .bidding-menu-item__list small {
         max-width: 168px;
@@ -282,7 +282,7 @@
     }
 }
 
-@media (max-width:796px) {
+@media (max-width:836px) {
     .bidding-menu-item__list,
     .bidding-menu-item__list small {
         max-width: 160px;
@@ -340,3 +340,34 @@
 
 
 /* responsie binding */
+
+
+/* responsie clients */
+
+@media (max-width:740px) {
+    .clients-title {
+        flex-direction: column;
+        align-items: center;
+    }
+    .clients-wrap {
+        padding: 15px 30px 40px;
+    }
+    .media {
+        padding: 20px 10px 0 30px;
+        flex-direction: column;
+    }
+    .media::before,
+    .media::after {
+        left: 20px;
+    }
+    .media__body {
+        height: 200px;
+        text-align: center;
+    }
+    .fig-caption {
+        margin-left: 5px;
+    }
+}
+
+
+/* responsie clients */
