@@ -1349,7 +1349,7 @@
     padding: 10px;
     opacity: 0;
     transform: scale(0);
-    transition: all linear 0.2s;
+    transition: all linear 0.3s;
 }
 
 .Portfolio__port-link a:first-child {
