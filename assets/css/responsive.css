@@ -371,3 +371,27 @@
 
 
 /* responsie clients */
+
+
+/* responsive Agriya-News */
+
+@media (min-width: 768px) {
+    .Agriya-News__container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .Agriya-News__container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Agriya-News__container {
+        width: 1170px;
+    }
+}
+
+
+/* responsive Agriya-News */
