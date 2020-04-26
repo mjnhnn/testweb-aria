@@ -40,6 +40,28 @@ $('.Agriya-News__content').slick({
     autoplaySpeed: 4000,
     cssEase: 'linear',
 });
+$('.Featured-In__content__list-slider').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: 'linear',
+    responsive: [{
+            breakpoint: 1126,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
 // counters js
 // $(document).ready(function() {
 
