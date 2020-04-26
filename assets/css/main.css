@@ -423,10 +423,14 @@
 
 .slider-banner .slick-prev:before {
     transform: translateX(-120%) !important;
+    content: "<" !important;
+    font-weight: bold;
 }
 
 .slider-banner .slick-next:before {
     transform: translateX(120%) !important;
+    content: ">" !important;
+    font-weight: bold;
 }
 
 .slider-banner:hover .slick-next:before {
@@ -444,14 +448,14 @@
     background-color: rgba(245, 245, 245, 0.1) !important;
     width: 40px;
     height: 80px;
-    line-height: 80px;
+    line-height: 70px;
 }
 
 .slider-banner .slick-next:before {
     background-color: rgba(245, 245, 245, 0.1) !important;
     width: 40px;
     height: 80px;
-    line-height: 80px;
+    line-height: 70px;
 }
 
 .slider-banner .slick-next:before {
