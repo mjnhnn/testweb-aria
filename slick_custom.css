@@ -37,7 +37,8 @@
 
 .slide .slide__img img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     opacity: 1 !important;
     animation-duration: 3s;
     transition: all 1s ease;
@@ -48,6 +49,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 1200px;
 }
 
 .slide .slide__content.slide__content__left {
@@ -91,8 +93,14 @@
 .slide .slide__content--headings .button-custom {
     text-decoration: none;
     color: #fff;
-    padding: 1.2rem 2.5rem;
+    padding: 1.5rem 2.5rem;
     font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.slide .slide__content--headings .button-custom.bg-light {
+    color: #333;
+    background-color: #f8f9fa;
 }
 
 .slider [data-animation-in] {

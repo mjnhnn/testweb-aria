@@ -23,3 +23,13 @@ if (window.screen.width <= 1072) {
     let heightHeader = $(".header-mobile").outerHeight()
     $(".banner__slider").css("margin-top", `${heightHeader}px`)
 }
+
+function loading() {
+    $(".ld-wrap").fadeIn();
+    return false;
+}
+
+function offloading() {
+    $(".ld-wrap").fadeOut();
+    return false;
+}

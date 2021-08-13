@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template HTML | Minhh PC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
@@ -13,15 +18,12 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/loading.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/slick_custom.css">
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/slick_custom.css">
 </head>
 
 <body>
@@ -139,15 +141,29 @@
                 <div class="slider stick-dots">
                     <div class="slide">
                         <div class="slide__img">
-                            <img src="" alt="" data-lazy="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="full-image animated" data-animation-in="zoomInImage" />
+                            <img src="" alt="" data-lazy="https://cdn.pixabay.com/photo/2017/10/31/17/44/cherries-2905964_960_720.jpg" class="full-image animated" data-animation-in="zoomInImage" />
                         </div>
                         <div class="slider_container_content grid wide">
-                            <div class="slide__content ">
+                            <div class="slide__content slide__content__left">
+                                <div class="slide__content--headings text-left">
+                                    <p class="animated top-title" data-animation-in="fadeInRight" data-delay-in="0.2">Purchase today. just $76</p>
+                                    <h2 class="animated title" data-animation-in="fadeInRight">SUPER DEAL LUNCH</h2>
+                                    <button class="button-custom animated bg-light" data-animation-in="fadeInUp">Today's Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="" alt="" data-lazy="https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png" class="full-image animated" data-animation-in="zoomInImage" />
+                        </div>
+                        <div class="slider_container_content grid wide">
+                            <div class="slide__content">
                                 <div class="slide__content--headings text-center">
 
                                     <p class="animated top-title" data-animation-in="fadeInUp" data-delay-in="0.3">Welcome to Shareat restaurant</p>
                                     <h2 class="animated title" data-animation-in="fadeInUp">Let Enjoy The Rhym Of Fooday Dishes</h2>
-                                    <button class="btn-light btn button-custom animated" data-animation-in="fadeInUp">Our menu</button>
+                                    <button class="btn-success button-custom animated" data-animation-in="fadeInUp">Our menu</button>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +171,7 @@
                     </div>
                     <div class="slide">
                         <div class="slide__img">
-                            <img src="" alt="" data-lazy="https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="full-image animated" data-animation-in="zoomOutImage" />
+                            <img src="" alt="" data-lazy="https://cdn.pixabay.com/photo/2017/11/09/10/39/christmas-2933008_960_720.jpg" class="full-image animated" data-animation-in="zoomOutImage" />
                         </div>
                         <div class="slider_container_content grid wide">
                             <div class="slide__content slide__content__right">
@@ -166,22 +182,6 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="slide">
-                        <div class="slide__img">
-                            <img src="" alt="" data-lazy="https://images.unsplash.com/photo-1502741126161-b048400d085d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="full-image animated" data-animation-in="zoomInImage" />
-                        </div>
-                        <div class="slider_container_content grid wide">
-                            <div class="slide__content slide__content__left">
-                                <div class="slide__content--headings text-left">
-                                    <p class="animated top-title" data-animation-in="fadeInRight" data-delay-in="0.2">Purchase today. just $76</p>
-                                    <h2 class="animated title" data-animation-in="fadeInRight">SUPER DEAL LUNCH</h2>
-                                    <button class="button-custom animated" data-animation-in="fadeInUp">Today's Menu</button>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -1516,6 +1516,17 @@
 
         </footer>
     </div>
+
+    <!-- DOM loading -->
+    <div class="ld-wrap">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <!-- jquery 3.4.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -1524,7 +1535,7 @@
 
     <!-- slick slider -->
     <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+    <script src="./assets/library/slick_animation/slick-animation.min.js"></script>
 
     <!-- jquery counter -->
     <script src="./assets/library/Jquery_counter/numscroller-1.0.js"></script>
