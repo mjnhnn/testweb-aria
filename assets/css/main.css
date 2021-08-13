@@ -12,8 +12,9 @@
 }
 
 .header-mobile__logo {
-    display: block;
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
 }
 
 .header-mobile__btn {
@@ -65,67 +66,19 @@
 
 .header-mobile__logo img {
     width: 118px;
-    height: 61px;
-}
-
-.header-pos-fixed {
-    background-image: url(../img/img-top-fixed.jpg);
-    display: flex;
-    align-items: center;
-    background-position: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    animation: fadeInDown linear 0.5s;
-    z-index: 22;
-}
-
-.header-fixed {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-fixed__content {
-    display: block;
-    font-size: 1.8rem;
-    color: var(--white-color);
-    cursor: pointer;
-    font-weight: 400;
-    text-align: center;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-}
-
-.header-fixed__wrapper {
-    padding: 18px;
-}
-
-.header-fixed__content a {
-    color: #ffea35;
-    font-size: 1.8rem;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.header-fixed__content a:hover {
-    color: #ffea35;
-    text-decoration: underline;
-}
-
-.header-fixed__icon {
-    color: #e2cb31;
-    cursor: pointer;
-    font-size: 2.8rem;
-    font-weight: bold;
 }
 
 .header-bot {
-    margin-top: 61px;
     transition: all linear .3s;
+}
+
+.header-bot.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #242424;
 }
 
 .header-bot-logo-menu {
@@ -134,8 +87,13 @@
 
 .header-bot__logo {
     padding: 20px 0 6px 15px;
-    display: block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+}
+
+.header-bot__logo img {
+    width: 120px;
 }
 
 .header-bot__right {
@@ -146,7 +104,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 0 15px 15px;
 }
 
 .header-bot__btn a {
@@ -188,7 +146,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 10px 15px;
+    padding: 10px 0 20px 15px;
 }
 
 .menumobile-btn-close {
@@ -232,14 +190,6 @@
     transform-origin: center;
 }
 
-.header-bot__menu-list::after {
-    content: "";
-    height: 20px;
-    position: absolute;
-    width: 100%;
-    bottom: -20px;
-}
-
 .header-bot__menu-list:hover::before {
     display: block;
 }
@@ -253,30 +203,26 @@
     display: block;
 }
 
-
-/* .header-bot__menu-link::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid #1a7dd9;
-    display: none;
-    animation: growth linear 0.3s;
-    transform-origin: center;
+.header-bot.fixed .header-bot__menu-link {
+    color: #b6b6b6;
 }
-
-.header-bot__menu-link:hover::after {
-    display: block;
-} */
 
 .header-bot__menu-icon {
     padding: 0 5px;
 }
 
-.header-bot__menu-link--active {
+.header-bot.fixed .header-bot__menu-link--active,
+.header-bot__menu-link--active,
+.header-bot .header-bot__menu-list:hover .header-bot__menu-link {
     color: #1a7dd9;
 }
 
 .solutions {
     position: relative;
+}
+
+.solutions a {
+    cursor: default;
 }
 
 .solutions__child {
@@ -322,6 +268,15 @@
     border-color: transparent transparent #27a6d0 transparent;
     top: -21px;
     left: 28px;
+}
+
+.solutions__child::after {
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: 0;
+    width: 100%;
+    height: 20px;
 }
 
 .solutions__child__link {
@@ -471,6 +426,14 @@
     right: 0 !important;
 }
 
+.slick-initialized .slick-slide .slider-banner__list {
+    display: none;
+}
+
+.slick-initialized .slick-slide.slick-current.slick-active .slider-banner__list {
+    display: flex;
+}
+
 
 /* Slider */
 
@@ -493,7 +456,7 @@
 }
 
 .counters__link {
-    margin-right: 25px;
+    margin-right: 15px;
     display: flex;
     padding: 0 5px;
     align-items: center;
@@ -525,6 +488,7 @@
     display: block;
     font-size: 2.2rem;
     font-weight: 600;
+    min-width: 86.9px;
 }
 
 .counters__item span::after {
@@ -1025,6 +989,8 @@
     top: 15px;
     font-size: 2rem;
     text-transform: uppercase;
+    z-index: 2;
+    display: none;
 }
 
 .bidding-wrap-menu-moblie i {

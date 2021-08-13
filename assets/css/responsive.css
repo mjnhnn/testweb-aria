@@ -5,6 +5,9 @@
 }
 
 @media (max-width:1073px) {
+    .bidding-wrap-menu-moblie {
+        display: block;
+    }
     .header-mobile {
         display: flex;
         position: fixed;
@@ -13,13 +16,6 @@
         left: 0;
         z-index: 23;
         background-color: #fff;
-    }
-    .header-pos-fixed {
-        margin-top: 80px;
-        position: unset;
-    }
-    .header-fixed__icon {
-        padding: 0 10px;
     }
     /* menu mobile */
     .header-bot {
@@ -108,18 +104,11 @@
 }
 
 @media (max-width:481px) {
-    .header-mobile__logo img {
-        width: 75px;
-        height: 37px;
-    }
     .header-mobile__menu-close i {
         top: 13px;
     }
     .header-fixed__icon {
         padding: 0 10px;
-    }
-    .header-pos-fixed {
-        margin-top: 55px;
     }
 }
 
@@ -269,6 +258,7 @@
     #menumobile-binding:checked~.bidding-menu-wrap {
         transform: translateX(0%);
         opacity: 1;
+        z-index: 2;
     }
 }
 
